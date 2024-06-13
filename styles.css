@@ -20,7 +20,7 @@ header {
 }
 
 header img {
-  max-height: 100px;
+  max-height: 20vh;
 }
 
 .container {
@@ -30,6 +30,7 @@ header img {
 }
 
 .features {
+  width: max-content;
   margin: 20px 0;
   padding: 20px;
   background-color: #1b3648;
@@ -43,6 +44,7 @@ header img {
 .features ul {
   list-style-type: none;
   padding: 0;
+  text-align: left;
 }
 
 .features li {
