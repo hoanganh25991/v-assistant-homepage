@@ -3,50 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>serene.ai - Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Serene.ai</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #2e495e;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      header {
+        background-color: #1b3648;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header img {
+        max-height: 100px;
+      }
+      .container {
+        text-align: center;
+        padding: 20px;
+        max-width: 800px;
+      }
+      .features {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #1b3648;
+        border-radius: 10px;
+      }
+      .download {
+        margin: 20px 0;
+      }
+      .download a {
+        text-decoration: none;
+        color: #cab8a9;
+        margin: 0 10px;
+      }
+      .purchase {
+        margin: 20px 0;
+      }
+      .purchase button {
+        background-color: #cab8a9;
+        color: #1b3648;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .purchase button:hover {
+        background-color: #d6c1b5;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <!-- Insert your logo here -->
+      <img src="logo.png" alt="Serene.ai Logo" />
     </header>
-    <main>
-      <section id="features">
+    <div class="container">
+      <h1>Welcome to Serene.ai</h1>
+      <p>Reclaim your time and immerse yourself in peace.</p>
+      <div class="features">
         <h2>Features</h2>
         <ul>
-          <li>Reclaim Your Time and Immerse Yourself in Peace</li>
+          <li>
+            Reclaim Your Time: immerse yourself in peace while our AI handles
+            your tasks.
+          </li>
           <li>
             Streamlined Communication: Enjoy a single, seamless chat for all
-            your communication needs
+            your communication needs.
           </li>
           <li>
             Ultimate Privacy: Keep your data secure and private, stored directly
-            on your device
+            on your device.
           </li>
           <li>
             Personalized Responses: Experience responses tailored to you, always
-            respecting your privacy
+            respecting your privacy.
           </li>
           <li>
             Offline Capabilities: Access Serene.ai anytime, anywhere with
-            uninterrupted offline functionality
+            uninterrupted offline functionality.
           </li>
         </ul>
-      </section>
-      <section id="downloads">
-        <h2>Downloads</h2>
-        <p>Download for:</p>
-        <ul>
-          <li><a href="#">Windows</a></li>
-          <li><a href="#">MacOS</a></li>
-          <li><a href="#">Linux</a></li>
-        </ul>
-      </section>
-      <section id="buy">
-        <h2>Buy Now</h2>
-        <p>$10 per month</p>
-        <p>Cancel anytime and get a full refund</p>
-      </section>
-    </main>
+      </div>
+      <div class="download">
+        <h2>Download</h2>
+        <a href="#">Windows</a>
+        <a href="#">MacOS</a>
+        <a href="#">Linux</a>
+      </div>
+      <div class="purchase">
+        <h2>Buy Serene.ai</h2>
+        <p>Only $10 per month. Cancel anytime and get a full refund.</p>
+        <button onclick="alert('Thank you for your purchase!')">
+          Subscribe Now
+        </button>
+      </div>
+    </div>
   </body>
 </html>
