@@ -20,7 +20,7 @@ header {
 }
 
 header img {
-  max-height: 20vh;
+  max-height: 15vh;
 }
 
 .container {
@@ -58,10 +58,17 @@ header img {
 
 .download a {
   text-decoration: none;
-  color: #cab8a9;
   margin: 0 10px;
   display: inline-flex;
   align-items: center;
+  background-color: #cab8a9;
+  color: #1b3648;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .download img {
