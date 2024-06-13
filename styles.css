@@ -1,41 +1,94 @@
 body {
+  font-family: Arial, sans-serif;
   background-color: #2e495e;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
   background-color: #1b3648;
-  padding: 10px;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main {
+header img {
+  max-height: 100px;
+}
+
+.container {
+  text-align: center;
   padding: 20px;
+  max-width: 800px;
 }
 
-h2 {
-  color: #cab8a9;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-button {
-  background-color: #cab8a9;
-  color: #2e495e;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
+.features {
+  margin: 20px 0;
+  padding: 20px;
   background-color: #1b3648;
-  color: #ffffff;
+  border-radius: 10px;
+}
+
+.features h2 {
+  font-size: 28px;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.download {
+  margin: 20px 0;
+}
+
+.download a {
+  text-decoration: none;
+  color: #cab8a9;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.download img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.purchase {
+  margin: 20px 0;
+}
+
+.purchase button {
+  background-color: #cab8a9;
+  color: #1b3648;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.purchase button:hover {
+  background-color: #d6c1b5;
+}
+
+.purchase p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
