@@ -8,37 +8,40 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  font-size: 1rem;
 }
 
 header {
   background-color: #1b3648;
   width: 100%;
-  padding: 20px 0;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 header img {
-  max-height: 15vh;
+  max-height: 8rem;
 }
 
 .container {
   text-align: center;
-  padding: 20px;
-  max-width: 800px;
+  max-width: min(75vw, 1024px);
+  box-sizing: border-box;
+}
+
+.slogan {
+  padding: 1rem;
 }
 
 .features {
-  width: max-content;
-  margin: 20px 0;
-  padding: 20px;
+  width: 100%;
+  padding: 1rem;
   background-color: #1b3648;
-  border-radius: 10px;
-}
-
-.features h2 {
-  font-size: 28px;
+  border-radius: 1rem;
+  box-sizing: border-box;
 }
 
 .features ul {
@@ -47,57 +50,34 @@ header img {
   text-align: left;
 }
 
-.features li {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
 .download {
-  margin: 20px 0;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .download a {
+  min-width: 6rem;
+  text-align: center;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0.5rem;
   display: inline-flex;
   align-items: center;
   background-color: #cab8a9;
   color: #1b3648;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   font-weight: bold;
+}
+
+.download a:hover {
+  color: #ffffff;
 }
 
 .download img {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-}
-
-.purchase {
-  margin: 20px 0;
-}
-
-.purchase button {
-  background-color: #cab8a9;
-  color: #1b3648;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.purchase button:hover {
-  background-color: #d6c1b5;
-}
-
-.purchase p {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
 }
