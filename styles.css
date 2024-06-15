@@ -99,3 +99,35 @@ header img {
   height: 1.5rem;
   margin-right: 0.5rem;
 }
+
+.purchase {
+  padding: 1rem 1rem 0 1rem;
+  box-sizing: border-box;
+}
+
+.purchase a {
+  min-width: 6rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  background-color: #cab8a9;
+  color: #1b3648;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.purchase a:hover {
+  color: #ffffff;
+}
+
+.purchase img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
