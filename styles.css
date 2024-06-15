@@ -38,7 +38,7 @@ header img {
 
 .container {
   text-align: center;
-  max-width: min(75vw, 1024px);
+  max-width: min(80vw, 1024px);
   box-sizing: border-box;
 }
 
