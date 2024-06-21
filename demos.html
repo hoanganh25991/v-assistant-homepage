@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Features - serene.ai</title>
+    <title>Demos - serene.ai</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="logo.png" />
@@ -11,61 +11,45 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-      .features-list {
+      .demos-list {
         width: 100%;
-        overflow: hidden;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #1b3648; /* Màu nền xanh đậm */
         padding: 1rem;
+        display: block;
+        overflow: hidden;
         border-radius: 1rem;
         box-sizing: border-box;
-        margin: 0 auto; /* Center the container */
+        background-color: #1b3648;
       }
 
-      .feature-item {
+      .demo-item {
         padding: 1rem;
         margin-bottom: 1rem;
         border-radius: 1rem;
         box-sizing: border-box;
         background-color: #2e495e;
-        flex: 0 0 100%; /* 1 item per row */
       }
 
-      .feature-item video {
+      .demo-item video {
         width: 100%;
         height: min(50vw, 50vh);
         margin-bottom: 1rem;
         border-radius: 1rem;
-        object-fit: contain; /* Ensure the video covers the entire area */
+        object-fit: contain;
       }
 
-      .feature-item h4 {
-        margin: 0.6rem 0 0.3rem;
+      .demo-item h4 {
+        margin: 0.8rem 0;
         color: #ffffff;
       }
 
-      .feature-item p {
+      .demo-item p {
+        margin: 0.8rem 0;
         text-align: center;
         max-width: 100%;
         color: #ffffff;
-        white-space: nowrap; /* Prevent text from wrapping */
+        white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis; /* Add ellipsis for overflow text */
-      }
-
-      @media (max-width: 760.5rem) {
-        .feature-item {
-          flex: 0 0 calc(50% - 1.2rem); /* 2 items per row on tablets */
-        }
-      }
-
-      @media (max-width: 480px) {
-        .feature-item {
-          flex: 0 0 calc(100% - 1.2rem); /* 1 item per row on mobile */
-        }
+        text-overflow: ellipsis;
       }
     </style>
   </head>
@@ -80,11 +64,11 @@
     </header>
     <div class="container">
       <div class="slogan">
-        <h1>Features of serene.ai</h1>
+        <h1>Demos of serene.ai</h1>
         <p>Explore the powerful features of serene.ai.</p>
       </div>
-      <div class="features-list">
-        <div class="feature-item">
+      <div class="demos-list">
+        <div class="demo-item">
           <video controls>
             <source
               src="ai-v-assistant-demo-tiếng-việt-20230527.mp4"
@@ -95,7 +79,7 @@
           <h4>Tiếng Việt Support</h4>
           <p>AI assistant hỗ trợ tiếng Việt.</p>
         </div>
-        <div class="feature-item">
+        <div class="demo-item">
           <video controls>
             <source
               src="ai-v-assistant-demo-fast-response-high-accuracy-20240621.mp4"
@@ -106,7 +90,7 @@
           <h4>Fast Response & High Accuracy</h4>
           <p>Fast response and high accuracy.</p>
         </div>
-        <div class="feature-item">
+        <div class="demo-item">
           <video controls>
             <source
               src="a-v-assistant-demo-english-conversation-58-20240621.mp4"
@@ -117,7 +101,7 @@
           <h4>English Conversation</h4>
           <p>Practice English through conversations.</p>
         </div>
-        <div class="feature-item">
+        <div class="demo-item">
           <video controls>
             <source
               src="ai-v-assistant-demo-explore-research-topics-20240621.mp4"
@@ -128,7 +112,7 @@
           <h4>Explore Research Topics</h4>
           <p>Explore various research topics.</p>
         </div>
-        <div class="feature-item">
+        <div class="demo-item">
           <video controls>
             <source
               src="ai-v-assistant-demo-youtube-summary-20230527.mp4"
@@ -139,7 +123,7 @@
           <h4>YouTube Summary</h4>
           <p>Summarize YouTube videos.</p>
         </div>
-        <div class="feature-item">
+        <div class="demo-item">
           <video controls>
             <source
               src="ai-v-assistant-demo-music-for-mood-20240527.mp4"
@@ -150,7 +134,7 @@
           <h4>Music for Mood</h4>
           <p>Play music to match your mood.</p>
         </div>
-        <div class="feature-item">
+        <div class="demo-item">
           <video controls>
             <source
               src="ai-v-assistant-demo-personal-documents-20240527.mp4"
