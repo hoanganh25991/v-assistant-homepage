@@ -89,7 +89,7 @@ header img {
   height: auto;
   background-color: #1b3648;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-sizing: border-box;
 }
 
@@ -104,25 +104,25 @@ header img {
   align-items: center;
   background-color: #2e495e;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-sizing: border-box;
   flex: 0 0 auto;
   width: calc(
     100% / 3 - 20px
   ); /* Adjust the width based on the number of slides per view */
-  margin: 0 10px;
+  margin: 0 0.6rem;
 }
 
 .swiper-slide video {
   width: 100%;
-  height: 200px; /* Set a fixed height for the videos */
-  margin-bottom: 10px;
-  border-radius: 8px;
+  height: 12rem; /* Set a fixed height for the videos */
+  margin-bottom: 0.6rem;
+  border-radius: 0.5rem;
   object-fit: contain; /* Ensure the video covers the entire area */
 }
 
 .swiper-slide h4 {
-  margin: 10px 0 5px;
+  margin: 0.6rem 0 0.3rem;
   color: #ffffff;
 }
 
@@ -145,18 +145,18 @@ header img {
 }
 
 .swiper-button-next {
-  right: 10px; /* Position the next button inside the video-demos section */
+  right: 0.6rem; /* Position the next button inside the video-demos section */
 }
 
 .swiper-button-prev {
-  left: 10px; /* Position the prev button inside the video-demos section */
+  left: 0.6rem; /* Position the prev button inside the video-demos section */
 }
 
 .swiper-pagination-bullet {
   background: #cab8a9 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
   .swiper-slide {
     width: calc(100% / 2 - 20px); /* Adjust the width for mobile view */
   }
