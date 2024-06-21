@@ -10,35 +10,168 @@
     <link rel="manifest" href="/manifest.json" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .container {
+        max-width: 100% !important;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          max-width: 100% !important;
+        }
+      }
+
+      .features-list {
+        margin-top: 1.2rem;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #1b3648; /* Màu nền xanh đậm */
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        margin: 0 auto; /* Center the container */
+      }
+
+      .feature-item {
+        background-color: #2e495e;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        margin: 0.6rem;
+        flex: 0 0 calc(50% - 1.2rem); /* 2 items per row */
+      }
+
+      .feature-item video {
+        width: 100%;
+        height: min(75vw, 50vh);
+        margin-bottom: 0.6rem;
+        border-radius: 0.5rem;
+        object-fit: contain; /* Ensure the video covers the entire area */
+      }
+
+      .feature-item h4 {
+        margin: 0.6rem 0 0.3rem;
+        color: #ffffff;
+      }
+
+      .feature-item p {
+        text-align: center;
+        max-width: 100%;
+        color: #ffffff;
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Add ellipsis for overflow text */
+      }
+
+      @media (max-width: 760.5rem) {
+        .feature-item {
+          flex: 0 0 calc(50% - 1.2rem); /* 2 items per row on tablets */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .feature-item {
+          flex: 0 0 calc(100% - 1.2rem); /* 1 item per row on mobile */
+        }
+      }
     </style>
   </head>
   <body>
     <header>
-      <img
-        src="woman-meditating-lotus-position-freepik-removebg.png"
-        alt="serene.ai Logo - Woman Meditating in Lotus Position"
-      />
+      <a href="/">
+        <img
+          src="woman-meditating-lotus-position-freepik-removebg.png"
+          alt="serene.ai Logo - Woman Meditating in Lotus Position"
+        />
+      </a>
     </header>
     <div class="container">
       <div class="slogan">
         <h1>Features of serene.ai</h1>
         <p>Explore the powerful features of serene.ai.</p>
       </div>
-      <div class="features-detail">
-        <h2>🔋 Powered by GPT-4, LLAMA-3</h2>
-        <p>Enhance your experience with cutting-edge AI technology.</p>
-        <h2>🕒 Reclaim Your Time</h2>
-        <p>Lighten your workload while our AI handles your tasks.</p>
-        <h2>💬 Streamlined Communication</h2>
-        <p>Enjoy a single, seamless chat for all your communication needs.</p>
-        <h2>🔒 Ultimate Privacy</h2>
-        <p>Keep your data secure and exclusively on your device.</p>
-        <h2>🤖 Personalized Responses</h2>
-        <p>
-          Experience responses tailored to you, always respecting your privacy.
-        </p>
-        <h2>📶 Offline Capabilities</h2>
-        <p>Access serene.ai anytime, anywhere.</p>
+      <div class="features-list">
+        <!-- Thêm các video demo ở đây -->
+        <div class="feature-item">
+          <video controls>
+            <source
+              src="ai-v-assistant-demo-tiếng-việt-20230527.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h4>Tiếng Việt Support</h4>
+          <p>AI assistant hỗ trợ tiếng Việt.</p>
+        </div>
+        <div class="feature-item">
+          <video controls>
+            <source
+              src="ai-v-assistant-demo-fast-response-high-accuracy-20240621.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h4>Fast Response & High Accuracy</h4>
+          <p>Fast response and high accuracy.</p>
+        </div>
+        <div class="feature-item">
+          <video controls>
+            <source
+              src="a-v-assistant-demo-english-conversation-58-20240621.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h4>English Conversation</h4>
+          <p>Practice English through conversations.</p>
+        </div>
+        <div class="feature-item">
+          <video controls>
+            <source
+              src="ai-v-assistant-demo-explore-research-topics-20240621.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h4>Explore Research Topics</h4>
+          <p>Explore various research topics.</p>
+        </div>
+        <div class="feature-item">
+          <video controls>
+            <source
+              src="ai-v-assistant-demo-youtube-summary-20230527.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h4>YouTube Summary</h4>
+          <p>Summarize YouTube videos.</p>
+        </div>
+        <div class="feature-item">
+          <video controls>
+            <source
+              src="ai-v-assistant-demo-music-for-mood-20240527.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h4>Music for Mood</h4>
+          <p>Play music to match your mood.</p>
+        </div>
+        <div class="feature-item">
+          <video controls>
+            <source
+              src="ai-v-assistant-demo-personal-documents-20240527.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <h4>Personal Documents</h4>
+          <p>Manage personal documents.</p>
+        </div>
       </div>
     </div>
   </body>

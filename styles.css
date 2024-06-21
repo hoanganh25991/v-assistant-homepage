@@ -1,3 +1,9 @@
+html,
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
@@ -112,7 +118,7 @@ header img {
   height: 200px; /* Set a fixed height for the videos */
   margin-bottom: 10px;
   border-radius: 8px;
-  object-fit: cover; /* Ensure the video covers the entire area */
+  object-fit: contain; /* Ensure the video covers the entire area */
 }
 
 .swiper-slide h4 {
