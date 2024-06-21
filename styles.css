@@ -201,6 +201,10 @@ header img {
   font-weight: bold;
 }
 
+.view-more a:hover {
+  color: #ffffff;
+}
+
 /* DOWNLOAD */
 .download {
   padding: 1rem 1rem 0 1rem;
@@ -224,14 +228,14 @@ header img {
   font-weight: bold;
 }
 
-.download a:hover {
-  color: #ffffff;
-}
-
 .download img {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
+}
+
+.download a:hover {
+  color: #ffffff;
 }
 
 /* PURCHASE */
