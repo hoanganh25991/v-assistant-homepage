@@ -131,7 +131,7 @@ header img {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ffffff;
+  color: #cab8a9 !important;
   position: absolute;
   top: 50%; /* Align the buttons vertically within the video-demos section */
   transform: translateY(-50%);
@@ -147,7 +147,7 @@ header img {
 }
 
 .swiper-pagination-bullet {
-  background: #ffffff;
+  background: #cab8a9 !important;
 }
 
 @media (max-width: 768px) {
@@ -162,11 +162,12 @@ header img {
 
 @media (max-width: 480px) {
   .swiper-slide {
-    width: calc(100% - 20px); /* Adjust the width for smaller mobile view */
+    width: 100%; /* Adjust the width for smaller mobile view */
+    margin: 0; /* Remove margin to fit the container */
   }
 
   .swiper-slide video {
-    min-width: 200px; /* Set a minimum width for the videos */
+    min-width: 100%; /* Ensure the video takes full width of the slide */
   }
 }
 /* FEATURES - VIEW MORE */
