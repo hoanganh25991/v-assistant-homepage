@@ -266,3 +266,14 @@ header img {
   height: 1.5rem;
   margin-right: 0.5rem;
 }
+
+.footer {
+  margin-top: 1rem;
+  background-color: #1b3648;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
