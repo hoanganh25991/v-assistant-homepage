@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Demo - serene.ai</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      .container {
+        width: 100%;
+      }
+
+      .notice {
+        margin-top: 1rem;
+        background-color: #cab8a9;
+        color: #000000;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+
+      .notice ul {
+        margin: 0;
+        padding-left: 2rem;
+      }
+
+      .notice li {
+        margin-bottom: 0.5rem;
+      }
+
+      .iframe-container {
+        margin-top: 1rem;
+        width: 100%;
+        height: calc(100vh - 5rem);
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: #2e495e;
+      }
+
+      .iframe-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <img
+          src="woman-meditating-lotus-position-freepik-removebg.png"
+          alt="serene.ai Logo - Woman Meditating in Lotus Position"
+        />
+      </a>
+    </header>
+    <div class="slogan">
+      <h1>Online Demo</h1>
+    </div>
+    <div class="container">
+      <div class="notice">
+        <p>
+          This online demo is hosted on a public server to allow everyone to try
+          out serene.ai. Please note the following limitations:
+        </p>
+        <ul>
+          <li>
+            <b>Rate Limit</b>: Due to shared usage, if many users are accessing
+            the demo simultaneously, you may experience rate limits.
+          </li>
+          <li>
+            <b>Public Shared</b>: Your queries and interactions are not private
+            in this demo environment.
+          </li>
+        </ul>
+        <p>
+          For the best experience, we recommend installing the application on
+          your personal device, where it will run locally and securely.
+        </p>
+      </div>
+      <div class="iframe-container">
+        <iframe src="/try-online-demo" title="Try Online Demo"></iframe>
+      </div>
+    </div>
+    <footer class="footer">
+      <div>serene.ai © 2024</div>
+      <div class="love">Made with ❤️</div>
+    </footer>
+  </body>
+</html>

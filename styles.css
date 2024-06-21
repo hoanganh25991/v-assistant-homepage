@@ -57,11 +57,12 @@ header img {
 }
 
 .slogan {
-  padding: 1rem;
+  margin-top: 1rem;
 }
 
 /* FEATURES */
 .features {
+  margin-top: 2rem;
   width: 100%;
   padding: 1rem;
   background-color: #1b3648;

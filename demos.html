@@ -11,7 +11,29 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-      .demos-list {
+      .online-demo a {
+        margin-top: 1rem;
+        min-width: 6rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        background-color: #cab8a9;
+        color: #1b3648;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .online-demo a:hover {
+        color: #ffffff;
+      }
+
+      .demos {
+        margin-top: 2rem;
         width: 100%;
         padding: 1rem;
         display: block;
@@ -19,6 +41,19 @@
         border-radius: 1rem;
         box-sizing: border-box;
         background-color: #1b3648;
+      }
+
+      .demo-intro {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        background-color: #2e495e;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .demo-intro p {
+        margin: 0;
       }
 
       .demo-item {
@@ -63,87 +98,96 @@
       </a>
     </header>
     <div class="container">
-      <div class="slogan">
+      <div class="online-demo">
         <h1>Demos of serene.ai</h1>
         <p>Explore the powerful features of serene.ai.</p>
+        <a href="/online-demo.html">🌐 Try Demo</a>
       </div>
-      <div class="demos-list">
-        <div class="demo-item">
-          <video controls>
-            <source
-              src="ai-v-assistant-demo-tiếng-việt-20230527.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <h4>Tiếng Việt Support</h4>
-          <p>AI assistant hỗ trợ tiếng Việt.</p>
+      <div class="demos">
+        <div class="demo-intro">
+          <p>
+            Explore how serene.ai can enhance your experience and assist you in
+            various tasks by watching our demo videos.
+          </p>
         </div>
-        <div class="demo-item">
-          <video controls>
-            <source
-              src="ai-v-assistant-demo-fast-response-high-accuracy-20240621.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <h4>Fast Response & High Accuracy</h4>
-          <p>Fast response and high accuracy.</p>
-        </div>
-        <div class="demo-item">
-          <video controls>
-            <source
-              src="a-v-assistant-demo-english-conversation-58-20240621.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <h4>English Conversation</h4>
-          <p>Practice English through conversations.</p>
-        </div>
-        <div class="demo-item">
-          <video controls>
-            <source
-              src="ai-v-assistant-demo-explore-research-topics-20240621.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <h4>Explore Research Topics</h4>
-          <p>Explore various research topics.</p>
-        </div>
-        <div class="demo-item">
-          <video controls>
-            <source
-              src="ai-v-assistant-demo-youtube-summary-20230527.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <h4>YouTube Summary</h4>
-          <p>Summarize YouTube videos.</p>
-        </div>
-        <div class="demo-item">
-          <video controls>
-            <source
-              src="ai-v-assistant-demo-music-for-mood-20240527.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <h4>Music for Mood</h4>
-          <p>Play music to match your mood.</p>
-        </div>
-        <div class="demo-item">
-          <video controls>
-            <source
-              src="ai-v-assistant-demo-personal-documents-20240527.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <h4>Personal Documents</h4>
-          <p>Manage personal documents.</p>
+        <div class="demo-list">
+          <div class="demo-item">
+            <video controls>
+              <source
+                src="ai-v-assistant-demo-tiếng-việt-20230527.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h4>Tiếng Việt Support</h4>
+            <p>AI assistant hỗ trợ tiếng Việt.</p>
+          </div>
+          <div class="demo-item">
+            <video controls>
+              <source
+                src="ai-v-assistant-demo-fast-response-high-accuracy-20240621.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h4>Fast Response & High Accuracy</h4>
+            <p>Fast response and high accuracy.</p>
+          </div>
+          <div class="demo-item">
+            <video controls>
+              <source
+                src="a-v-assistant-demo-english-conversation-58-20240621.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h4>English Conversation</h4>
+            <p>Practice English through conversations.</p>
+          </div>
+          <div class="demo-item">
+            <video controls>
+              <source
+                src="ai-v-assistant-demo-explore-research-topics-20240621.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h4>Explore Research Topics</h4>
+            <p>Explore various research topics.</p>
+          </div>
+          <div class="demo-item">
+            <video controls>
+              <source
+                src="ai-v-assistant-demo-youtube-summary-20230527.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h4>YouTube Summary</h4>
+            <p>Summarize YouTube videos.</p>
+          </div>
+          <div class="demo-item">
+            <video controls>
+              <source
+                src="ai-v-assistant-demo-music-for-mood-20240527.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h4>Music for Mood</h4>
+            <p>Play music to match your mood.</p>
+          </div>
+          <div class="demo-item">
+            <video controls>
+              <source
+                src="ai-v-assistant-demo-personal-documents-20240527.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h4>Personal Documents</h4>
+            <p>Manage personal documents.</p>
+          </div>
         </div>
       </div>
     </div>
