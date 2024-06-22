@@ -234,14 +234,15 @@
           videoElement.setAttribute("height", "100%");
           videoElement.setAttribute(
             "style",
-            "object-fit: contain; border-radius: 1rem;"
+            "object-fit: contain; border-radius: 1rem; position: absolute; top: 0; left: 0;"
           );
           const sourceElement = document.createElement("source");
           sourceElement.setAttribute("src", videoSrc);
           sourceElement.setAttribute("type", "video/mp4");
           videoElement.appendChild(sourceElement);
           const wrapper = this.parentNode;
-          wrapper.parentNode.replaceChild(videoElement, wrapper);
+          wrapper.innerHTML = "";
+          wrapper.appendChild(videoElement);
           videoElement.play();
         });
       });

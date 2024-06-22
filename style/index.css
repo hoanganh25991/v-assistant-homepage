@@ -113,7 +113,7 @@ header img {
   flex-wrap: nowrap;
 }
 
-.swiper-slide {
+.swiper-slide demo-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,7 +128,7 @@ header img {
   margin: 0 0.6rem;
 }
 
-.swiper-slide video {
+.swiper-slide demo-item video {
   width: 100%;
   height: 12rem; /* Set a fixed height for the videos */
   margin-bottom: 0.6rem;
@@ -136,12 +136,12 @@ header img {
   object-fit: contain; /* Ensure the video covers the entire area */
 }
 
-.swiper-slide h4 {
+.swiper-slide demo-item h4 {
   margin: 0.8rem 0;
   color: #ffffff;
 }
 
-.swiper-slide p {
+.swiper-slide demo-item p {
   margin: 0.8rem 0;
   text-align: center;
   max-width: 100%;
@@ -173,22 +173,22 @@ header img {
 }
 
 @media (max-width: 768px) {
-  .swiper-slide {
+  .swiper-slide demo-item {
     width: calc(100% / 2 - 1.2rem); /* Adjust the width for mobile view */
   }
 
-  .swiper-slide video {
+  .swiper-slide demo-item video {
     min-width: 10rem; /* Set a minimum width for the videos */
   }
 }
 
 @media (max-width: 480px) {
-  .swiper-slide {
+  .swiper-slide demo-item {
     width: 100%; /* Adjust the width for smaller mobile view */
     margin: 0; /* Remove margin to fit the container */
   }
 
-  .swiper-slide video {
+  .swiper-slide demo-item video {
     min-width: 100%; /* Ensure the video takes full width of the slide */
   }
 }
