@@ -52,11 +52,21 @@
       .thumbnail-wrapper {
         position: relative;
         width: 100%;
-        height: min(50vw, 50vh); /* Đảm bảo kích thước cố định */
+        padding-top: 56.25%; /* Tỷ lệ khung hình 16:9 */
         border-radius: 1rem;
         overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0.5); /* Viền đen */
         background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen để giống player */
+      }
+
+      .thumbnail-wrapper img,
+      .thumbnail-wrapper video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Đảm bảo hình ảnh hiển thị trọn vẹn */
       }
 
       .thumbnail-wrapper::after {
