@@ -71,9 +71,7 @@
       .demo-item video,
       .demo-item img {
         width: 100%;
-        height: min(50vw, 50vh);
-        margin-bottom: 1rem;
-        border-radius: 1rem;
+        height: 100%;
         object-fit: contain;
         cursor: pointer;
       }
@@ -93,13 +91,15 @@
         text-overflow: ellipsis;
       }
 
-      /* CSS mới để làm nổi bật hình ảnh */
+      /* CSS mới để làm nổi bật khung chứa */
       .thumbnail-wrapper {
         position: relative;
-        display: inline-block;
+        width: 100%;
+        height: min(50vw, 50vh); /* Đảm bảo kích thước cố định */
         border-radius: 1rem;
         overflow: hidden;
-        border: 2px solid #000; /* Viền đen */
+        border: 1px solid rgba(0, 0, 0, 0.5); /* Viền đen */
+        background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen để giống player */
       }
 
       .thumbnail-wrapper::after {
@@ -111,10 +111,9 @@
         height: 20%; /* Chiều cao của lớp mờ */
         background: linear-gradient(
           to top,
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0)
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
         ); /* Hiệu ứng mờ */
-        border-radius: 0 0 1rem 1rem; /* Bo góc dưới */
       }
     </style>
   </head>
@@ -232,16 +231,17 @@
           const videoElement = document.createElement("video");
           videoElement.setAttribute("controls", "");
           videoElement.setAttribute("width", "100%");
-          videoElement.setAttribute("height", "min(50vw, 50vh)");
+          videoElement.setAttribute("height", "100%");
           videoElement.setAttribute(
             "style",
-            "margin-bottom: 1rem; border-radius: 1rem; object-fit: contain;"
+            "object-fit: contain; border-radius: 1rem;"
           );
           const sourceElement = document.createElement("source");
           sourceElement.setAttribute("src", videoSrc);
           sourceElement.setAttribute("type", "video/mp4");
           videoElement.appendChild(sourceElement);
-          this.parentNode.replaceChild(videoElement, this);
+          const wrapper = this.parentNode;
+          wrapper.parentNode.replaceChild(videoElement, wrapper);
           videoElement.play();
         });
       });
