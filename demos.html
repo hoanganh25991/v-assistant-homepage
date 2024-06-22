@@ -68,12 +68,14 @@
         background-color: #2e495e;
       }
 
-      .demo-item video {
+      .demo-item video,
+      .demo-item img {
         width: 100%;
         height: min(50vw, 50vh);
         margin-bottom: 1rem;
         border-radius: 1rem;
         object-fit: contain;
+        cursor: pointer;
       }
 
       .demo-item h4 {
@@ -116,79 +118,65 @@
         </div>
         <div class="demo-list">
           <div class="demo-item">
-            <video controls loading="lazy">
-              <source
-                src="ai-v-assistant-demo-tieng-viet-20230527.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <img
+              src="thumbnail/ai-v-assistant-demo-tieng-viet-20230527.jpg"
+              alt="Tiếng Việt Support"
+              data-video="video/ai-v-assistant-demo-tieng-viet-20230527.mp4"
+            />
             <h4>Tiếng Việt Support</h4>
             <p>AI assistant hỗ trợ tiếng Việt.</p>
           </div>
           <div class="demo-item">
-            <video controls loading="lazy">
-              <source
-                src="ai-v-assistant-demo-fast-response-high-accuracy-20240621.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <img
+              src="thumbnail/ai-v-assistant-demo-fast-response-high-accuracy-20240621.jpg"
+              alt="Fast Response & High Accuracy"
+              data-video="video/ai-v-assistant-demo-fast-response-high-accuracy-20240621.mp4"
+            />
             <h4>Fast Response & High Accuracy</h4>
             <p>Fast response and high accuracy.</p>
           </div>
           <div class="demo-item">
-            <video controls loading="lazy">
-              <source
-                src="ai-v-assistant-demo-english-conversation-58-20240621.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <img
+              src="thumbnail/ai-v-assistant-demo-english-conversation-58-20240621.jpg"
+              alt="English Conversation"
+              data-video="video/ai-v-assistant-demo-english-conversation-58-20240621.mp4"
+            />
             <h4>English Conversation</h4>
             <p>Practice English through conversations.</p>
           </div>
           <div class="demo-item">
-            <video controls loading="lazy">
-              <source
-                src="ai-v-assistant-demo-explore-research-topics-20240621.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <img
+              src="thumbnail/ai-v-assistant-demo-explore-research-topics-20240621.jpg"
+              alt="Explore Research Topics"
+              data-video="video/ai-v-assistant-demo-explore-research-topics-20240621.mp4"
+            />
             <h4>Explore Research Topics</h4>
             <p>Explore various research topics.</p>
           </div>
           <div class="demo-item">
-            <video controls loading="lazy">
-              <source
-                src="ai-v-assistant-demo-youtube-summary-20230527.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <img
+              src="thumbnail/ai-v-assistant-demo-youtube-summary-20230527.jpg"
+              alt="YouTube Summary"
+              data-video="video/ai-v-assistant-demo-youtube-summary-20230527.mp4"
+            />
             <h4>YouTube Summary</h4>
             <p>Summarize YouTube videos.</p>
           </div>
           <div class="demo-item">
-            <video controls loading="lazy">
-              <source
-                src="ai-v-assistant-demo-music-for-mood-20240527.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <img
+              src="thumbnail/ai-v-assistant-demo-music-for-mood-20240527.jpg"
+              alt="Music for Mood"
+              data-video="video/ai-v-assistant-demo-music-for-mood-20240527.mp4"
+            />
             <h4>Music for Mood</h4>
             <p>Play music to match your mood.</p>
           </div>
           <div class="demo-item">
-            <video controls loading="lazy">
-              <source
-                src="ai-v-assistant-demo-personal-documents-20240527.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <img
+              src="thumbnail/ai-v-assistant-demo-personal-documents-20240527.jpg"
+              alt="Personal Documents"
+              data-video="video/ai-v-assistant-demo-personal-documents-20240527.mp4"
+            />
             <h4>Personal Documents</h4>
             <p>Manage personal documents.</p>
           </div>
@@ -199,5 +187,26 @@
       <div>serene.ai © 2024</div>
       <div class="love">Made with ❤️</div>
     </footer>
+    <script>
+      document.querySelectorAll(".demo-item img").forEach((img) => {
+        img.addEventListener("click", function () {
+          const videoSrc = this.getAttribute("data-video");
+          const videoElement = document.createElement("video");
+          videoElement.setAttribute("controls", "");
+          videoElement.setAttribute("width", "100%");
+          videoElement.setAttribute("height", "min(50vw, 50vh)");
+          videoElement.setAttribute(
+            "style",
+            "margin-bottom: 1rem; border-radius: 1rem; object-fit: contain;"
+          );
+          const sourceElement = document.createElement("source");
+          sourceElement.setAttribute("src", videoSrc);
+          sourceElement.setAttribute("type", "video/mp4");
+          videoElement.appendChild(sourceElement);
+          this.parentNode.replaceChild(videoElement, this);
+          videoElement.play();
+        });
+      });
+    </script>
   </body>
 </html>
