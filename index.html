@@ -82,6 +82,11 @@
           rgba(0, 0, 0, 0.5)
         ); /* Hiệu ứng mờ */
       }
+
+      /* CSS mới để ẩn phần che mờ */
+      .thumbnail-wrapper.no-overlay::after {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -318,6 +323,7 @@
             const wrapper = this.parentNode;
             wrapper.innerHTML = "";
             wrapper.appendChild(videoElement);
+            wrapper.classList.add("no-overlay"); // Thêm lớp để ẩn phần che mờ
             videoElement.play();
           });
         });
