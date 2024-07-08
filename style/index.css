@@ -27,8 +27,8 @@ body {
 
 body {
   font-size: 1rem;
-  background-color: #2e495e;
-  color: #ffffff;
+  background-color: #f49a80;
+  color: #433647;
   margin: 0;
   padding: 0;
   display: flex;
@@ -39,7 +39,7 @@ body {
 }
 
 header {
-  background-color: #1b3648;
+  background-color: #f46a50;
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -77,7 +77,7 @@ header img {
   margin-top: 2rem;
   width: 100%;
   padding: 1rem;
-  background-color: #1b3648;
+  background-color: #f46a50;
   border-radius: 1rem;
   box-sizing: border-box;
 }
@@ -102,7 +102,7 @@ header img {
 .swiper-container {
   width: 100%;
   height: auto;
-  background-color: #1b3648;
+  background-color: #f46a50;
   padding: 1rem;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -117,7 +117,7 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2e495e;
+  background-color: #f49a80;
   padding: 1rem;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -138,14 +138,14 @@ header img {
 
 .swiper-slide demo-item h4 {
   margin: 0.8rem 0;
-  color: #ffffff;
+  color: #433647;
 }
 
 .swiper-slide demo-item p {
   margin: 0.8rem 0;
   text-align: center;
   max-width: 100%;
-  color: #ffffff;
+  color: #433647;
   white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden;
   text-overflow: ellipsis; /* Add ellipsis for overflow text */
@@ -153,7 +153,7 @@ header img {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #cab8a9 !important;
+  color: #fef4de !important;
   position: absolute;
   top: 50%; /* Align the buttons vertically within the video-demos section */
   transform: translateY(-50%);
@@ -169,7 +169,7 @@ header img {
 }
 
 .swiper-pagination-bullet {
-  background: #cab8a9 !important;
+  background: #fef4de !important;
 }
 
 @media (max-width: 768px) {
@@ -206,8 +206,8 @@ header img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #cab8a9;
-  color: #1b3648;
+  background-color: #fef4de;
+  color: #433647;
   border: none;
   padding: 1rem;
   font-size: 1rem;
@@ -217,7 +217,7 @@ header img {
 }
 
 .view-more a:hover {
-  color: #ffffff;
+  color: #f46a50;
 }
 
 /* DOWNLOAD */
@@ -233,8 +233,8 @@ header img {
   margin: 0.5rem;
   display: inline-flex;
   align-items: center;
-  background-color: #cab8a9;
-  color: #1b3648;
+  background-color: #fef4de;
+  color: #433647;
   border: none;
   padding: 1rem;
   font-size: 1rem;
@@ -250,7 +250,7 @@ header img {
 }
 
 .download a:hover {
-  color: #ffffff;
+  color: #f46a50;
 }
 
 /* PURCHASE */
@@ -266,8 +266,8 @@ header img {
   margin: 0.5rem;
   display: inline-flex;
   align-items: center;
-  background-color: #cab8a9;
-  color: #1b3648;
+  background-color: #fef4de;
+  color: #433647;
   border: none;
   padding: 1rem;
   font-size: 1rem;
@@ -277,7 +277,7 @@ header img {
 }
 
 .purchase a:hover {
-  color: #ffffff;
+  color: #f46a50;
 }
 
 .purchase img {
@@ -288,7 +288,7 @@ header img {
 
 .footer {
   margin-top: 1rem;
-  background-color: #1b3648;
+  background-color: #f46a50;
   width: 100%;
   padding: 1rem;
   display: flex;
