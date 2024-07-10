@@ -3,7 +3,7 @@
   "short_name": "vAssistant",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F49A80",
+  "background_color": "#fef4de",
   "description": "AI Assistant",
   "icons": [
     {
@@ -12,5 +12,5 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#F49A80"
+  "theme_color": "#fef4de"
 }

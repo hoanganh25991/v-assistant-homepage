@@ -27,7 +27,7 @@ body {
 
 body {
   font-size: 1rem;
-  background-color: #f49a80;
+  background-color: #fef4de;
   color: #433647;
   margin: 0;
   padding: 0;
@@ -39,7 +39,7 @@ body {
 }
 
 header {
-  background-color: #f46a50;
+  background-color: #f5886e;
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -77,7 +77,7 @@ header img {
   margin-top: 2rem;
   width: 100%;
   padding: 1rem;
-  background-color: #f46a50;
+  background-color: #f5886e;
   border-radius: 1rem;
   box-sizing: border-box;
 }
@@ -102,7 +102,7 @@ header img {
 .swiper-container {
   width: 100%;
   height: auto;
-  background-color: #f46a50;
+  background-color: #f5886e;
   padding: 1rem;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -117,7 +117,7 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f49a80;
+  background-color: #fef4de;
   padding: 1rem;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -153,7 +153,7 @@ header img {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fef4de !important;
+  color: #fef8eb !important;
   position: absolute;
   top: 50%; /* Align the buttons vertically within the video-demos section */
   transform: translateY(-50%);
@@ -169,7 +169,7 @@ header img {
 }
 
 .swiper-pagination-bullet {
-  background: #fef4de !important;
+  background: #fef8eb !important;
 }
 
 @media (max-width: 768px) {
@@ -206,9 +206,9 @@ header img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #fef4de;
+  background-color: #fef8eb;
+  border: 1px solid #433647;
   color: #433647;
-  border: none;
   padding: 1rem;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -217,7 +217,7 @@ header img {
 }
 
 .view-more a:hover {
-  color: #f46a50;
+  color: #f5886e;
 }
 
 /* DOWNLOAD */
@@ -233,9 +233,9 @@ header img {
   margin: 0.5rem;
   display: inline-flex;
   align-items: center;
-  background-color: #fef4de;
+  background-color: #fef8eb;
+  border: 1px solid #433647;
   color: #433647;
-  border: none;
   padding: 1rem;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -250,7 +250,7 @@ header img {
 }
 
 .download a:hover {
-  color: #f46a50;
+  color: #f5886e;
 }
 
 /* PURCHASE */
@@ -266,9 +266,9 @@ header img {
   margin: 0.5rem;
   display: inline-flex;
   align-items: center;
-  background-color: #fef4de;
+  background-color: #fef8eb;
+  border: 1px solid #433647;
   color: #433647;
-  border: none;
   padding: 1rem;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -277,7 +277,7 @@ header img {
 }
 
 .purchase a:hover {
-  color: #f46a50;
+  color: #f5886e;
 }
 
 .purchase img {
@@ -288,7 +288,7 @@ header img {
 
 .footer {
   margin-top: 1rem;
-  background-color: #f46a50;
+  background-color: #f5886e;
   width: 100%;
   padding: 1rem;
   display: flex;
